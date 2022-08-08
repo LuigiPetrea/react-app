@@ -1,38 +1,294 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    min-height: 100vh;
+    background-image: url('assets/imgs/bg-1920x1200.png');
+}
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+}
+
+.content{
+    margin: 2rem;
+}
+/* 
+
+====== Navbar Component ======
+
+*/
+
+.logo{
+    width: 100px;
+    height: 90px;
+}
+.navbar{
+    background-color: rgba(173, 18, 152, 0.644);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navlink{
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 400;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(173, 18, 152, 2.644);
+}
+
+.navlink:hover{
+    font-weight: 700;
+    color: white;
+    background-color: rgba(199, 18, 152, 0.944);
+    box-shadow: 10px 10px 60px rgba(243, 18, 152, 2.644);
+}
+
+@media only screen and (max-width: 550px){
+    .navbar{
+        width: 100%;
+        display: block;
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+    .navbar ul{
+        display: block;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    .navlink{
+        margin-left: 10px;
+        width: 95%;
+        margin-bottom: 20px;
+        display: block;
+        box-shadow: 10px 10px 5px rgba(273, 18, 152, 2.644);
+    }
+}
+
+/*.active:active{
+    box-shadow: 10px 10px 60px white;
+    color: purple;
+    background-color: white;
+}*/
+
+/* 
+
+====== footer section Component ======
+
+*/
+
+
+
+#logo-footer:active{
+    opacity: .8;
+}
+
+footer{
+    float: none;
+    margin-top: auto;
+    background-color: rgba(54, 185, 98, 0.499);
+    text-align: center;
+    padding: 5px;
+}
+
+/*
+
+====== Home ======
+
+*/
+.box-content{
+    background: rgba(23, 116, 133, 0.503);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.title::before,
+.title::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  width: 1.7rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+.title{
+    margin: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+    text-align: center;
+    font-weight: large;
+    color: white;
+}
+.img{
+    border-radius: 5px;
+    transition: .09s ease-in-out;
+    width: 35rem;
+    height: 20rem;
+}
+.img:hover, .card-img-top:hover{
+    border: 3px dashed gray;
+}
+.card-img-top{
+    height: 50%;
+}
+.cards.card{
+    margin: 20px;
+    flex: 25%;
+}
+
+.cards-section{
+    background: rgba(131, 12, 131, 0.503);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 750px){
+    .img{
+        height: 15rem;
+        float: none;
+        width: 80%;
+    }
+    .cards.card{
+        flex: 45%;   
+    }
+    .card-img-top{
+        height: 160px;
+    }
+    .title::before,
+    .title::after {
+        transition: 1s ease-in-out;
+        display: block;
+        width: 7.7rem;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*
+
+====== About ======
+
+*/
+
+.box-about{
+    font-size: 20px;
+    transition: .5s ease-in-out;
+    color: black;
+    background-color: rgba(172, 241, 187, 0.486);
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 400px;
+    margin: 20px;
+    margin-bottom: 150px;
+}
+.box-about:hover{
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 10px 10px 40px rgba(251, 255, 252, .886);
+    border: 1px solid rgba(233, 243, 235, .886);
+    background-color: rgba(182, 241, 187, .886);
+}
+.img-float{
+    float: left;
+}
+.content-txt-float{
+    line-height: 2rem;
+    margin: 10px;
+    margin-left: 70px;
+    margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 500px){
+    .img-float{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+    }
+    .content-txt-float{
+        text-align: center;
+        margin: 5px;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+
+====== Contact page ======
+
+*/
+
+form{
+    width: 94%;
+    background-image: url('assets/imgs/bg-1920x1080.png');
+    border-radius: 20px;
+    box-shadow: 10px 10px 60px aqua;
+    padding: 40px;
+    color: white;
+    margin: 4%;
 }
+input#name, input#email{
+    width: 15rem;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+textarea#messages{
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100px;
+    width: 27rem;
+    resize: none;
+}
+
+.btn-primary{
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    padding: 25px;
+}
+
+
+@media only screen and (max-width:550px){
+    textarea#messages{
+        width: 90%;
+    }
+    input#name, input#email{
+        width: 45%;
+    }
+}
+/*
+
+====== Projects ======
+
+*/
+
