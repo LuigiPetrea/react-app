@@ -12,11 +12,11 @@ function Cards(){
             */
         }
             <div align="center" className="cards card bg-primary text-white border border-5 border-rounder">
-        <img className="cards card-img-top" src={imgComponent1} width="50%" height="20%" />
+        <img className="cards card-img-top" src={imgComponent1} width="50%" height="20%" alt={"component-card"}/>
     <div className="cards card-body">
         <h5 className="cards card-title">Card title</h5>
         <p className="cards card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-success p-3">Go somewhere</a>
+        <button className="btn btn-success p-3">Go somewhere</button>
     </div>
     </div>
         {   /*
@@ -25,11 +25,11 @@ function Cards(){
         }
 
     <div className="cards card bg-primary text-white border border-5 border-rounder">
-            <img className="card-img-top" src={imgComponent2} width="50%" height="20%" />
+            <img className="card-img-top" src={imgComponent2} width="50%" height="20%" alt={"component-card"}/>
     <div className="cards card-body">
             <h5 className="cards card-title">Card title</h5>
             <p className="cards card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-success p-3">Go somewhere</a>
+            <button className="btn btn-success p-3">Go somewhere</button>
     </div>
     </div>        
 
@@ -38,11 +38,11 @@ function Cards(){
             */
         }
         <div className="cards card bg-primary text-white border border-5 border-rounder">
-            <img className="card-img-top" src={imgComponent4} width="50%" height="20%" />
+            <img className="card-img-top" src={imgComponent4} width="50%" height="20%" alt={"component-card"}/>
         <div className="cards card-body">
             <h5 className="cards card-title">Card title</h5>
             <p className="cards card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-success p-3">Go somewhere</a>
+            <button className="btn btn-success p-3">Go somewhere</button>
         </div>
         </div>
 </div>

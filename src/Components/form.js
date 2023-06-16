@@ -1,5 +1,4 @@
 import React from "react";
-import emoj from "../assets/imgs/emoj.png";
 
 function Form(){
     return (
